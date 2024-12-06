@@ -11,7 +11,7 @@ public class App {
         //runStack();
         //runStackGeneric();
         runQueue();
-        
+        runQueueGeneric();
     }
 
     public static void runStack() {
