@@ -13,6 +13,36 @@ public class Pantalla {
         this.nombre = nombre;
         this.ruta = ruta;
     }
-    
 
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+    public String getNombre() {
+        return nombre;
+    }
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public String getRuta() {
+        return ruta;
+    }
+
+    public void setRuta(String ruta) {
+        this.ruta = ruta;
+    }
+
+    @Override
+    public String toString() {
+        return "MiClase{" +
+               "id=" + id +
+               ", nombre='" + nombre + '\'' +
+               ", ruta='" + ruta + '\'' +
+               '}';
+    }
 }

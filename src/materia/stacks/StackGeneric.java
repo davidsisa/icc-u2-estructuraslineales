@@ -24,6 +24,7 @@ public class StackGeneric <T> {
 
         return value;
     }
+
     public T peek(){
         if(isEmpy()){
             throw new EmptyStackException();
@@ -33,4 +34,5 @@ public class StackGeneric <T> {
     public boolean isEmpy(){
         return top == null;
     }
+    
 }

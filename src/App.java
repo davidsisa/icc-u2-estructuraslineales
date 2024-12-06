@@ -1,9 +1,11 @@
+import materia.models.Pantalla;
+import materia.stacks.StackGeneric;
 import materia.stacks.Stacks;
-
 public class App {
     
     public static void main(String[] args) throws Exception {
         runStack();
+        runStackGeneric();
     }
     public static void runStack(){
         Stacks stack= new Stacks();
@@ -21,6 +23,11 @@ public class App {
 
     }
     public static void runStackGeneric(){
-        
+        StackGeneric<Pantalla> router = new StackGeneric<>();
+        router.push(new Pantalla(1,"Home Page","/home"));
+        router.push(new Pantalla(1,"Menu Page","/home/menu"));
+        router.push(new Pantalla(1,"Users Page","/home/menu/users"));
+        System.out.println("Estoy en " + router.peek().getRuta());
+
     }
 }
