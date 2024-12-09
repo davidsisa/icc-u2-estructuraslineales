@@ -1,7 +1,7 @@
 package Controller;
 
 import Models.Contact;
-import java.util.LinkedList;
+import Models.LinkedList;
 
 public class ContactManager {
     private LinkedList<Contact<?, ?>> contacts;
@@ -9,6 +9,6 @@ public class ContactManager {
         this.contacts = new LinkedList<>();
     }
     public void addContact (Contact<?, ?> contact){
-        contacts.appendToTall
+        contacts.appendToTall(contact);
     }
 }

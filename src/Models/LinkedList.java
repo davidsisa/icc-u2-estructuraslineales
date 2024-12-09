@@ -14,7 +14,6 @@ public class LinkedList <T>{
             current.setNext(new Node<>(value));
         }
         size++;
-
     }
     public void print(){
         if(head == null){

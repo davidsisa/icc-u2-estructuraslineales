@@ -1,17 +1,18 @@
 
+import Controller.*;
 import materia.models.Pantalla;
 import materia.queues.Queue;
 import materia.queues.QueueGeneric;
 import materia.stacks.StackGeneric;
 import materia.stacks.Stacks;
-
 public class App {
 
     public static void main(String[] args) throws Exception {
         //runStack();
         //runStackGeneric();
-        runQueue();
-        runQueueGeneric();
+        //runQueue();
+        //runQueueGeneric();
+        runContactManager();
     }
 
     public static void runStack() {
@@ -58,5 +59,9 @@ public class App {
         cola.enqueue("Numero Tres");
         System.out.println(cola.peek());
         System.out.println(cola.size());
+    }
+    public static void runContactManager(){
+        MenuController menuController = new MenuController();
+        menuController.showMenu();
     }
 }
