@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class ConsoleView {
     private Scanner scanner;
     public ConsoleView(){
-
+        this.scanner = new Scanner(System.in);
     }
     public void displayMenu(){
         System.out.println("/t1. Add Contact");
@@ -17,7 +17,7 @@ public class ConsoleView {
     }
     public String getInput(String prompt){
         System.out.println(" "+ prompt);
-        return scanner.nextLine();
+        return scanner.next();
     }
     public void showMesagge(String mesagge){
         System.out.println( " -- " + mesagge);
