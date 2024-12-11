@@ -1,10 +1,10 @@
 
-import Controller.*;
 import materia.models.Pantalla;
 import materia.queues.Queue;
 import materia.queues.QueueGeneric;
 import materia.stacks.StackGeneric;
 import materia.stacks.Stacks;
+import tarea3_ejercicios.Controller.*;
 public class App {
 
     public static void main(String[] args) throws Exception {

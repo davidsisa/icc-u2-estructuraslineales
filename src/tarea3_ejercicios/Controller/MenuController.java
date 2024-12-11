@@ -1,6 +1,6 @@
-package Controller;
-import Models.Contact;
-import View.ConsoleView;
+package tarea3_ejercicios.Controller;
+import tarea3_ejercicios.Models.Contact;
+import tarea3_ejercicios.View.ConsoleView;
 public class MenuController {
     private ContactManager contactManager;
     private ConsoleView consoleView;

@@ -1,5 +1,5 @@
-package Models;
-import Models.*;
+package tarea3_ejercicios.Models;
+import tarea3_ejercicios.Models.*;
 public class LinkedList <T>{
     private Node<T> head;
     private int size = 0;

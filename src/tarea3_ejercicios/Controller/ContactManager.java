@@ -1,8 +1,8 @@
-package Controller;
+package tarea3_ejercicios.Controller;
 
-import Models.Contact;
-import Models.LinkedList;
-import Models.Node;
+import tarea3_ejercicios.Models.Contact;
+import tarea3_ejercicios.Models.LinkedList;
+import tarea3_ejercicios.Models.Node;
 public class ContactManager {
     private LinkedList<Contact<?, ?>> contacts;
     public  ContactManager (){
@@ -10,6 +10,7 @@ public class ContactManager {
     }
     public void addContact (Contact<?, ?> contact){
         contacts.appendToTall(contact);
+        
     }
     public Contact<?, ?> findContactByName(String name){
         Node<Contact<?, ?>> current = contacts.getHead();

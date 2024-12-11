@@ -1,4 +1,4 @@
-package Models;
+package tarea3_ejercicios.Models;
 
 public class Node <T> {
     private T value;

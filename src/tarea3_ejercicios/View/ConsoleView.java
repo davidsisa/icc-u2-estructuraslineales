@@ -1,4 +1,4 @@
-package View;
+package tarea3_ejercicios.View;
 
 import java.util.Scanner;
 
