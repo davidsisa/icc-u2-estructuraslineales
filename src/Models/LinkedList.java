@@ -1,4 +1,5 @@
 package Models;
+import Models.*;
 public class LinkedList <T>{
     private Node<T> head;
     private int size = 0;

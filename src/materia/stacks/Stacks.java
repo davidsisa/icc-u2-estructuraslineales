@@ -33,7 +33,7 @@ public class Stacks {
         return top.getValue();
     }
     public void printStacks(){
-        Node aux=top;
+        NodeU aux=top;
         while (aux != null){
             System.out.println(aux.getValue());
             aux=aux.getNext();
@@ -41,7 +41,7 @@ public class Stacks {
     }
     public int getSize(){
         int size = 0;
-        Node current = top;
+        NodeU current = top;
         while(current!= null){
             size++;
             current=current.getNext();
