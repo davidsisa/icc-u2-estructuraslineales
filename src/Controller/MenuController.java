@@ -45,10 +45,19 @@ public class MenuController {
         consoleView.showMesagge("Contact added");
     }
     private void findContact() {
+        String name  = consoleView.getInput("Enter name to search : ");
+        Contact<?,?> contact = contactManager.findContactByName(name);
 
+        if (contact!=null){
+            consoleView.showMesagge("Contact Found: " + contact);
+        }else {
+            consoleView.showMesagge("Contact not Found 404 " );
+        }
     }
     private void deleteContact() {
-
+        String name  = consoleView.getInput("Enter name to delete : ");
+        contactManager.deleteContact(name);
+        consoleView.showMesagge("Contact deleted if is existed " );
     }
     private void printContact() {
 
