@@ -1,6 +1,6 @@
 package materia.stacks;
-import materia.models.NodeU;
 import java.util.EmptyStackException;
+import materia.models.NodeU;
 
 
 
@@ -9,6 +9,7 @@ public class Stacks {
     private NodeU top;
     public Stacks(){
         this.top=null;
+        
     }
     public void push(int value){
         NodeU newNode = new NodeU(value);

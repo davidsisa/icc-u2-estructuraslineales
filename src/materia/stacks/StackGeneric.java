@@ -1,6 +1,5 @@
 package materia.stacks;
 import java.util.EmptyStackException;
-
 import materia.models.NodeGeneric;
 public class StackGeneric <T> {
     private NodeGeneric<T> top;
@@ -14,7 +13,7 @@ public class StackGeneric <T> {
     public void push(T data) {
         NodeGeneric<T> newNode = new NodeGeneric<>(data);
         newNode.setNext(top);
-        top = newNode;  // Aquí es necesario actualizar el top con el nuevo nodo
+        top = newNode;  
         size++;
     }
 

@@ -1,4 +1,8 @@
 
+import Ejercicio_01_Login.ValidarSignos;
+import Ejercicio_02_sorting.Pilas.MetodoStacks;
+import Ejercicio_02_sorting.Pilas.OrdenarStacks;
+import java.util.Scanner;
 import materia.models.Pantalla;
 import materia.queues.Queue;
 import materia.queues.QueueGeneric;
@@ -12,7 +16,9 @@ public class App {
         //runStackGeneric();
         //runQueue();
         //runQueueGeneric();
-        runContactManager();
+        //runContactManager();
+        //iniciarStackSorting();
+        iniciarValidarSignos();
     }
 
     public static void runStack() {
@@ -63,5 +69,30 @@ public class App {
     public static void runContactManager(){
         MenuController menuController = new MenuController();
         menuController.showMenu();
+    }
+    public static void iniciarStackSorting(){
+        MetodoStacks<Integer> pila = new MetodoStacks<>();
+        OrdenarStacks ordenar = new OrdenarStacks();
+        pila.insercion(100);
+        pila.insercion(2);
+        pila.insercion(9);
+        pila.insercion(20);
+        pila.insercion(10);
+        System.out.println("Pila Sin Ordenar");
+        pila.mostrar();
+        ordenar.ordenarPilas(pila);
+        System.out.println();
+        System.out.println("Pila Ordenada");
+        pila.mostrar();
+        
+
+    }
+    public static void iniciarValidarSignos(){
+        ValidarSignos validar = new  ValidarSignos();
+        Scanner leer = new Scanner(System.in);
+        System.out.println("Ingresa la cadena para validar: ");
+        String cadena = leer.next();
+        boolean extraer = validar.isValid(cadena);
+        System.out.println(extraer);
     }
 }
